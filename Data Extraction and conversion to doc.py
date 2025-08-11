@@ -8,8 +8,8 @@ import locale
 from docx import Document  # For saving to Word
 
 # === PATH SETTINGS ===
-pytesseract.pytesseract.tesseract_cmd = r"D:\\Software\\Tesseract\\tesseract.exe"
-pdf_path = r"C:\\Users\\Nuruzzaman Rahat\\Downloads\\Income Tax law 2023.pdf"
+pytesseract.pytesseract.tesseract_cmd = r"D:\\Software\\Tesseract\\tesseract.exe" #download tesseract and provide the file path here
+pdf_path = r"C:\\Users\\Nuruzzaman Rahat\\Downloads\\Income Tax law 2023.pdf" # set the path of your file from which you one to extract text
 docx_path = r"C:\\Users\\Nuruzzaman Rahat\\Downloads\\income_tax_law_plain.docx"
 poppler_path = r"D:\\Software\\poppler-24.08.0\\Library\\bin"
 
@@ -95,3 +95,4 @@ def main():
 if __name__ == '__main__':
     multiprocessing.freeze_support()
     main()
+
